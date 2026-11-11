@@ -101,10 +101,10 @@ Other saved queries include:
 
 | File | Description |
 |---|---|
-| `AntiqueDealerDatabase.accdb` | The Microsoft Access database (tables, queries, forms, macros) |
+| `antique_dealer_database.accdb` | The Microsoft Access database (tables, queries, forms, macros) |
 | `erd-diagram.png` | Entity relationship diagram |
 | `main-menu.png`, `profit-loss-report.png`, `auction-entry-form.png` | Screenshots of the application |
-| `Project_Proposal.pdf` | Original proposal with requirements, forms, and reports |
+| `antique_dealer_datbase_project_proposal.pdf` | Original proposal with requirements, forms, and reports |
 
 > **Note:** To open the `.accdb` file you need Microsoft Access (Windows). The database is populated with real inventory, auction, and sales data from JRB's Antiques. Customer personal information has been removed or anonymized.
 
