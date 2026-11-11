@@ -1,6 +1,6 @@
-# Antique Dealer Inventory & Sales Database
+# JRB's Antiques: Inventory & Sales Database
 
-A relational database application built in **Microsoft Access** for a small antique dealer. It replaces a large, hard-to-manage spreadsheet with a structured system that tracks every item from the auction where it was bought, through refurbishment and listing, to its sale and shipment to the customer.
+A relational database application built in **Microsoft Access** for JRB's Antiques, a small antique dealer, and tested with the business's real data. It replaces a large, hard-to-manage spreadsheet with a structured system that tracks every item from the auction where it was bought, through refurbishment and listing, to its sale and shipment to the customer.
 
 *Semester project for CISS 143: Database Design and Implementation, Lorain County Community College (Fall 2025)*
 
@@ -14,6 +14,20 @@ The dealer buys antiques at auctions, picks them up, repairs them, lists them on
 - Which items are ready to list, and which are listed but unsold?
 - What did each item cost (purchase price, buyer's premium, repairs, fees, shipping) compared with what it sold for?
 - Which employees handled pickups, sales, and shipments?
+
+## 🖥️ Screenshots
+
+**Main menu:** the dashboard that opens automatically at startup, with one-click access to every form and report.
+
+<img src="main-menu.png" alt="Main menu" width="450">
+
+**Profit/Loss by Category report:** calculates the profit or loss on every sold item after all costs, grouped by category with subtotals.
+
+![Profit/Loss report](profit-loss-report.png)
+
+**Auction Entry form:** records an auction and, in the Items Won subform, every item purchased at it.
+
+![Auction Entry form](auction-entry-form.png)
 
 ## 🗺️ Entity Relationship Diagram
 
@@ -42,6 +56,16 @@ The database has **9 related tables**, designed with primary and foreign keys an
 5. **Shipped:** record the carrier, shipping cost, and shipping employee
 
 Each step has its own **data entry form**, opened from a central **menu dashboard** that launches automatically at startup through an **AutoExec macro**.
+
+## 📊 Reports
+
+| Report | What it answers |
+|---|---|
+| **Profit/Loss by Category** | Profit on each item after purchase price, buyer's premium, repairs, platform fees, and shipping |
+| **Vendor** | Inventory obtained from each auction house |
+| **Employee** | Listings, sales, pickups, and shipments handled by each employee |
+| **Inventory** | Unsold items and items the dealer chose to keep |
+| **Sales Platform** | Listings and sales by third-party platform |
 
 ## 🔍 Example Query
 
@@ -79,9 +103,10 @@ Other saved queries include:
 |---|---|
 | `AntiqueDealerDatabase.accdb` | The Microsoft Access database (tables, queries, forms, macros) |
 | `erd-diagram.png` | Entity relationship diagram |
+| `main-menu.png`, `profit-loss-report.png`, `auction-entry-form.png` | Screenshots of the application |
 | `Project_Proposal.pdf` | Original proposal with requirements, forms, and reports |
 
-> **Note:** To open the `.accdb` file you need Microsoft Access (Windows). The data included is sample data.
+> **Note:** To open the `.accdb` file you need Microsoft Access (Windows). The database is populated with real inventory, auction, and sales data from JRB's Antiques. Customer personal information has been removed or anonymized.
 
 ---
 
